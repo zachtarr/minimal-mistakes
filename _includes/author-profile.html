@@ -65,6 +65,14 @@
         </li>
       {% endif %}
 
+      {% if author.mastodon %}
+        <li>
+          <a href="https://mastodon.social/{{ author.mastodon }}" itemprop="sameAs">
+            <i class="fab fa-mastodon" aria-hidden="true"></i> Mastodon
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.keybase %}
         <li>
           <a href="https://keybase.io/{{ author.keybase }}" itemprop="sameAs">
